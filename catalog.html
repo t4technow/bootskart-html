@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="./assets/Price-Range-Slider-jQuery-UI/jquery-ui.css">
+
+	<!-- SLICK CAROUSEL -->
+	<link rel="stylesheet" href="./assets/slick/slick.css" />
+	<link rel="stylesheet" href="./assets/slick/slick-theme.css" />
+
+	<link rel="stylesheet" href="./assets/LineIcons-Package-2.0/WebFont/font-css/LineIcons.css" />
+
+
+	<link rel="stylesheet" href="./assets/style.css" />
+
+	<title>Product - BootsKart</title>
+</head>
+
+<body>
+	<!-- Navbar Start -->
+	<nav class="navbar navbar-expand-md navbar-brand-center justify-content-between vlt fixed-top">
+		<ul class="navbar-nav left-nav">
+			<li class="nav-item main-nav-item" id="search">
+				<i class="sc lni lni-search-alt"></i>
+			</li>
+
+			<li class="nav-item mega dropdown has-megamenu">
+				<div class="ico px-2" data-bs-toggle="dropdown">
+					<i class="lni lni-menu"></i>
+				</div>
+				<div class="label px-2" data-bs-toggle="dropdown">
+					<span class="small">select</span>
+					<span class="c">Category</span>
+				</div>
+
+				<div class="dropdown-menu megamenu vlt" id="mmenu" role="menu">
+					<div class="row px-3 pt-4 pb-5">
+						<div class="col-md-2">
+							<ul>
+								<h3 class="product-name">
+									<a href="" class="">SHoes</a>
+								</h3>
+								<li><a href="#" class="nav-link">Lifestyle</a></li>
+								<li><a href="#" class="nav-link">Running</a></li>
+								<li><a href="#" class="nav-link">Gym</a></li>
+								<li><a href="#" class="nav-link">Football</a></li>
+								<li><a href="#" class="nav-link">basketball</a></li>
+								<li><a href="#" class="nav-link">skateboarding</a></li>
+								<li><a href="#" class="nav-link">sandals & flipflops</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<ul>
+								<h3 class="product-name">
+									<a href="" class="">Mobile</a>
+								</h3>
+								<li><a href="#" class="nav-link">Lifestyle</a></li>
+								<li><a href="#" class="nav-link">Running</a></li>
+								<li><a href="#" class="nav-link">Gym</a></li>
+								<li><a href="#" class="nav-link">Football</a></li>
+								<li><a href="#" class="nav-link">basketball</a></li>
+								<li><a href="#" class="nav-link">skateboarding</a></li>
+								<li><a href="#" class="nav-link">sandals & flipflops</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<ul>
+								<h3 class="product-name">
+									<a href="" class="">Laptops</a>
+								</h3>
+								<li><a href="#" class="nav-link">Lifestyle</a></li>
+								<li><a href="#" class="nav-link">Running</a></li>
+								<li><a href="#" class="nav-link">Gym</a></li>
+								<li><a href="#" class="nav-link">Football</a></li>
+								<li><a href="#" class="nav-link">basketball</a></li>
+								<li><a href="#" class="nav-link">skateboarding</a></li>
+								<li><a href="#" class="nav-link">sandals & flipflops</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<ul>
+								<h3 class="product-name">
+									<a href="" class="">SHoes</a>
+								</h3>
+								<li><a href="#" class="nav-link">Lifestyle</a></li>
+								<li><a href="#" class="nav-link">Running</a></li>
+								<li><a href="#" class="nav-link">Gym</a></li>
+								<li><a href="#" class="nav-link">Football</a></li>
+								<li><a href="#" class="nav-link">basketball</a></li>
+								<li><a href="#" class="nav-link">skateboarding</a></li>
+								<li><a href="#" class="nav-link">sandals & flipflops</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<ul>
+								<li><a href="#" class="nav-link">about</a></li>
+								<li><a href="#" class="nav-link">Contact</a></li>
+								<li><a href="#" class="nav-link">shipping and deliver</a></li>
+								<li><a href="#" class="nav-link">Order Status</a></li>
+								<li><a href="#" class="nav-link">payment</a></li>
+								<li><a href="#" class="nav-link">skateboarding</a></li>
+								<li><a href="#" class="nav-link">sandals & flipflops</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<ul>
+								<li><a href="#" class="nav-link">about</a></li>
+								<li><a href="#" class="nav-link">Contact</a></li>
+								<li><a href="#" class="nav-link">shipping and deliver</a></li>
+								<li><a href="#" class="nav-link">Order Status</a></li>
+								<li><a href="#" class="nav-link">payment</a></li>
+								<li><a href="#" class="nav-link">skateboarding</a></li>
+								<li><a href="#" class="nav-link">sandals & flipflops</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		<a class="navbar-brand main-nav-item nav-item" href="#"> BootsKart </a>
+
+		<ul class="navbar-nav right-nav">
+			<!-- If logged in 
+					<li class="nav-item main-nav-item">
+					<a class="nav-link user-link" href="#">
+						<img src="./img/john-doe.jpg" alt="" class="img-thumbnail rounded-circle">
+					</a>
+				</li> -->
+			<li class="nav-item main-nav-item">
+				<a class="nav-link" href="#">
+					<i class="lni lni-user"></i>
+				</a>
+			</li>
+			<li class="nav-item main-nav-item">
+				<a class="nav-link" href="#">
+					<i class="lni lni-heart"></i>
+				</a>
+			</li>
+			<li class="nav-item main-nav-item">
+				<a class="nav-link" href="#">
+					<i class="lni lni-cart"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<form action="" class="search-form hide-item">
+		<input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+		<button class="btn search-btn" type="submit">
+			<i class="lni lni-search-alt"></i>
+		</button>
+	</form>
+	<!-- Navbar Ends -->
+<div class="offset"></div>
+	<div class="breadcrumb-area pt-4 vlt">
+		<h2 class="cat-head">MEN'S LIFESTYLE SHOES</h2>
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item">Home</li>
+			<li class="breadcrumb-item">Catalog</li>
+			<li class="breadcrumb-item">Men</li>
+			<li class="breadcrumb-item">Shoes</li>
+		</ul>
+	</div>
+
+	<div class="wrapper container shadow-lg">
+		<div class="cat-ad">
+			<div class="row rowd content new new-lg light-blue-bg">
+				<div class="col-md-8 ps-4">
+					<div class="new-badge px-4">
+						<span class="dark p-1 px-2">new</span>
+					</div>
+					<div class="new-info px-4">
+						<span class="cat">Mountain Bike</span>
+						<h1 href="#" class="product-name mt-2">Emonda SLR</h1>
+					</div>
+					<div class="img-lg" style="
+								background-image: url(../img/EmondaSLR9DiscEtap_21_33140_B_Primary.png);
+							"></div>
+					<div class="more-info px-4">
+						<a href="" class="btn more btn-main">more info</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 p-3 content new-sm blue-bg">
+					<div class="new-badge px-4">
+						<span class="dark p-1 px-2">new</span>
+					</div>
+
+					<div class="row rowd">
+						<div class="col-sm-6">
+							<div class="new-info px-4">
+								<span class="cat">Wearables</span>
+								<h1 href="#" class="product-name mt-2">iWatch</h1>
+							</div>
+						</div>
+						<div class="col-sm-6 img-holder">
+							<img src="./img/watch-11.png" alt="" class="img-fluid" />
+						</div>
+					</div>
+					<div class="more-info px-4">
+						<a href="" class="btn more btn-main">more info</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="products-display">
+			<div class="row rowd">
+				<div class="col-md-3 filter-controls br">
+					<div class="filter-cap bb">
+						<h5 class="ps-5 nav-item sub-nav-item">Filter</h5>
+						<span class="nav-item sub-nav-item">
+							<i class="lni lni-reload"></i>
+						</span>
+					</div>
+					<ul class="nav flex-column">
+						<li class="px-4 nav-item dd pb-3">
+							<a class="nav-link dd-toggle filter-dropper" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="true">
+								categories
+							</a>
+							<button class="btn close-btn">
+								<span>clear</span>
+								<!-- <i class="lni lni-close"></i> -->
+							</button>
+							<ul class="dd-menu show filter-drop">
+								<li class="df li-item">
+									<a class="dropdown-item" href="#" role="button"
+										data-bs-toggle="dropdown">Lifestyle</a>
+									<span>12</span>
+								</li>
+								<li class="df li-item">
+									<a class="dropdown-item" href="#">Casual</a> <span>18</span>
+								</li>
+								<li class="df li-item">
+									<a class="dropdown-item" href="#">Running</a> <span>4</span>
+								</li>
+								<li class="df li-item">
+									<a class="dropdown-item" href="#">Training</a>
+									<span>6</span>
+								</li>
+								<li class="df li-item">
+									<a class="dropdown-item" href="#">Basketball</a>
+									<span>1</span>
+								</li>
+								<li class="df li-item">
+									<a class="dropdown-item" href="#">Football</a>
+									<span>8</span>
+								</li>
+								<li class="df li-item">
+									<a class="dropdown-item" href="#">Skateboarding</a>
+									<span>2</span>
+								</li>
+							</ul>
+						</li>
+
+						<li class="px-4 nav-item dd bg-sec pb-3">
+							<a class="nav-link dd-toggle filter-dropper" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="true">
+								Price
+							</a>
+							<button class="btn close-btn">
+								<span>clear</span>
+								<!-- <i class="lni lni-close"></i> -->
+							</button>
+							<div class="dd-menu show filter-drop">
+								<div class="price-selector pt-3">
+									<input type="number" min="0" max="9900" oninput="validity.valid||(value='0');"
+										id="min_price" class="price-range-field" />
+									<input type="number" min="0" max="10000" oninput="validity.valid||(value='10000');"
+										id="max_price" class="price-range-field" />
+								</div>
+								<div class="price-selection-slider">
+									<div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+								</div>
+							</div>
+						</li>
+
+						<li class="px-4 nav-item dd pb-3 brands-dd">
+							<a class="nav-link dd-toggle filter-dropper" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="true">
+								Brand
+							</a>
+							<button class="btn close-btn">
+								<span>clear</span>
+								<!-- <i class="lni lni-close"></i> -->
+							</button>
+							<ul class="dd-menu show filter-drop brands" data-group="brand">
+								<li class="df brand hide">
+									<input type="checkbox" value="" id="brand-all" class="all" checked />
+									<label for="brand-all">all brands</label>
+								</li>
+								<li class="df brand">
+									<label for="nike">Nike</label>
+									<input type="checkbox" value=".nike" id="nike" />
+								</li>
+								<li class="df brand">
+									<label for="adidas">Adidas</label>
+									<input type="checkbox" value=".adidas" id="adidas" />
+								</li>
+								<li class="df brand">
+									<label for="puma">Puma</label>
+									<input type="checkbox" value=".puma" id="puma" />
+								</li>
+								<li class="df brand">
+									<label for="cat">Cat</label>
+									<input type="checkbox" value=".cat" id="cat" />
+								</li>
+								<li class="df brand">
+									<label for="tommy">Tommy Hilfiger</label>
+									<input type="checkbox" value=".tommy" id="tommy" />
+								</li>
+
+							</ul>
+						</li>
+
+						<li class="px-4 nav-item dd pb-3">
+							<a class="nav-link dd-toggle filter-dropper" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="true">
+								colors
+							</a>
+							<button class="btn close-btn">
+								<span>clear</span>
+								<!-- <i class="lni lni-close"></i> -->
+							</button>
+							<div class="dd-menu show filter-drop">
+								<ul class="colors-filter py-4">
+									<li class="colors color-white active lni lni-checkmark" data-color="white"></a></li>
+									<li class="colors color-grey" data-color="grey"></li>
+									<li class="colors color-yellow" data-color="yellow"></a></li>
+									<li class="colors color-red" data-color="red"></li>
+									<li class="colors color-blue" data-color="blue"></li>
+									<li class="colors color-violet" data-color="violet"></li>
+									<li class="colors color-black" data-color="black"></li>
+									<li class="colors color-orange" data-color="orange"></li>
+									<li class="colors color-green" data-color="green"></li>
+									<li class="colors color-teal" data-color="teal"></a></li>
+									<li class="colors color-brown" data-color="brown"></li>
+									<li class="colors color-wheel" data-color="wheel"></li>
+
+								</ul>
+							</div>
+						</li>
+
+						<li class="px-4 nav-item dd pb-3">
+							<a class="nav-link dd-toggle filter-dropper" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="true">
+								size
+							</a>
+							<button class="btn close-btn">
+								<span>clear</span>
+								<!-- <i class="lni lni-close"></i> -->
+							</button>
+							<div class="dd-menu show filter-drop size-grid pt-3">
+								<ul class="size-filter grid-5">
+
+									<li class="sizes nav-item">4</li>
+									<li class="sizes nav-item">4.5</li>
+									<li class="sizes nav-item">5</li>
+									<li class="sizes nav-item">5.5</li>
+									<li class="sizes nav-item">6</li>
+									<li class="sizes nav-item">6.5</li>
+									<li class="sizes nav-item">7</li>
+									<li class="sizes nav-item">7.5</li>
+									<li class="sizes nav-item">8</li>
+									<li class="sizes nav-item">8.5</li>
+									<li class="sizes nav-item">9</li>
+									<li class="sizes nav-item">9.5</li>
+									<li class="sizes nav-item active">10</li>
+									<li class="sizes nav-item">10.5</li>
+									<li class="sizes nav-item">11</li>
+									<li class="sizes nav-item">11.5</li>
+									<li class="sizes nav-item">12</li>
+									<li class="sizes nav-item">12.5</li>
+									<li class="sizes nav-item">13</li>
+									<li class="sizes nav-item">13.5</li>
+									<li class="sizes nav-item">14</li>
+									<li class="sizes nav-item">14.5</li>
+									<li class="sizes nav-item">15</li>
+									<li class="sizes nav-item">16</li>
+									<li class="sizes nav-item">17</li>
+									<li class="sizes nav-item">18</li>
+									<li class="sizes nav-item">19</li>
+
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="col-md-9 display-controls" id="displayShowcase" data-item="shoes">
+					<div class="display-control-nav bb grid-3">
+
+						<li class="nav-item sub-nav-item">
+							<div class="controller df">
+								<span class="lbl">sort by:</span>
+								<select class="form-select" aria-label="Default select">
+									<option selected>price $ - $$</option>
+									<option value="1">popularity</option>
+									<option value="2">rating</option>
+									<option value="3">price $$ - $</option>
+								</select>
+							</div>
+						</li>
+						<li class="nav-item bl sub-nav-item">
+							<div class="controller df">
+								<span class="lbl">show :</span>
+								<select class="form-select" aria-label="Default select">
+									<option selected>12</option>
+									<option value="1">15</option>
+									<option value="2">18</option>
+									<option value="3">21</option>
+								</select>
+							</div>
+						</li>
+
+						<ul class="navbar-nav bl right-nav" id="viewController">
+							<li class="nav-item sub-nav-item active" id="gridV" data-toggle="gridShowcase">
+								<i class="lni lni-grid-alt"></i>
+							</li>
+							<li class="nav-item sub-nav-item" id="listV" data-toggle="listShowcase">
+								<i class="lni lni-list"></i>
+							</li>
+						</ul>
+					</div>
+
+					<section class="grid-showcase grid-3" id="gridShowcase">
+
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/orange.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light buy-btn">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/red.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/green.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/white-3.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/black.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/blue.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/orange.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/red.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/green.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/white-3.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/black.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="bb p-3 content cgl">
+							<div class="img-holder">
+								<div class="content-overlay"></div>
+								<img src="./img/blue.png" alt="" class="img-fluid mx-auto d-block" />
+							</div>
+							<div class="info px-4">
+								<div class="prdct">
+									<a href="#" class="product-name">Nike ZOOM</a>
+									<span class="cat hide catL">Lifestyle</span>
+								</div>
+								<span class="product-price txt-vlt">$ 250</span>
+							</div>
+							<div class="content-details fadeIn-top px-4">
+								<span class="cat catG">Lifestyle</span>
+								<button class="btn btn-light-out rounded-pill px-4 bg-light">
+									<i class="lni lni-cart"></i> buy
+								</button>
+
+								<button class="btn btn-blur rounded-circle wish">
+									<i class="lni lni-heart"></i>
+								</button>
+							</div>
+						</div>
+
+					</section>
+
+					<!-- <section class="list-showcase" id="listShowcase">
+							
+							<div class="bb p-3 list-content" data-cat="lifestyle" data-price="250">
+								<div class="img-holder">
+									<div class="content-overlay hide"></div>
+									<img src="./img/orange.png" alt="" class="img-fluid mx-auto d-block" />
+								</div>
+								<div class="info px-4">
+									<div class="prdct">
+										<a href="#" class="product-name">Nike ZOOM</a>
+										<span class="cat">Lifestyle</span>
+									</div>
+									<span class="product-price txt-vlt">$ 250</span>
+								</div>
+
+
+								<div class="content-details fadeIn-top px-4 d-flex">
+									<span class="cat hide catG">Lifestyle</span>
+									<button class="btn btn-light-out rounded-pill px-4 bg-light">
+										<i class="lni lni-cart"></i> buy
+									</button>
+
+									<button class="btn btn-blur rounded-circle wish">
+										<i class="lni lni-heart"></i>
+									</button>
+
+								</div>
+							</div>
+
+						</section> -->
+
+					<div class="pagination-nav text-dark grid-3 bb bt">
+						<ul class="navbar-nav left-nav">
+							<li class="nav-item sub-nav-item">
+								<a href="" class="nav-item">
+									<i class="lni lni-arrow-left"></i>
+								</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav center-nav ">
+							<li class="navbar-item pagination-item">
+								<a href="" class="nav-item">1</a>
+							</li>
+							<li class="navbar-item pagination-item">
+								<a href="" class="nav-item">2</a>
+							</li>
+							<li class="navbar-item pagination-item">
+								<a href="" class="nav-item">3</a>
+							</li>
+							<li class="navbar-item pagination-item">
+								<a href="" class="nav-item">4</a>
+							</li>
+							<li class="navbar-item pagination-item">
+								<a href="" class="nav-item">5</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav bl right-nav">
+							<li class="nav-item sub-nav-item ms-auto">
+								<a href="" class="nav-item">
+									<i class="lni lni-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="news-letter text-center">
+		<div class="col-lg-8 offset-2 p-3">
+			<h2>subscribe to our newsletter</h2>
+			<p class="lead">
+				Never miss an offer again. Get the latest offers delivered to you by
+				subscribing to our newsletter.
+			</p>
+			<div class="mx-5 pb-5">
+				<div class="input-group mb-3 mt-4">
+					<input type="text" class="form-control" placeholder="Enter email"
+						aria-label="Recipient's username" />
+					<button class="btn btn-success border-rad" type="button" id="button-addon2">
+						<i class="lni lni-telegram"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="dark"></footer>
+
+	<!-- JavaScript -->
+	<script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./assets/jquery.min.js"></script>
+	<script src="./assets/Price-Range-Slider-jQuery-UI/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="./assets/Price-Range-Slider-jQuery-UI/price_range_script.js" type="text/javascript"></script>
+	<script src="./assets/slick/slick.min.js"></script>
+	<script src="./assets/main.js"></script>
+</body>
+
+</html>

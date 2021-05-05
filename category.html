@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+  <!-- SLICK CAROUSEL -->
+  <link rel="stylesheet" href="./assets/slick/slick.css">
+  <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>BootsKart</title>
+</head>
+
+<body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/dark-t4-logo.png" alt="" height="40px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Shoes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./category.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Watches
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Mobiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./category.html">Laptops</a>
+          </li>
+        </ul>
+        <form class="d-flex mr">
+          <input class="form-control me-2 ml" id="search-input" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn search-btn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link"href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+
+  <!-- Carousel Start -->
+  <div id="hero" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item hero-item active red">
+        <div class="cap">
+          <h1>60% OFF</h1>
+        </div>
+        <a href="" class="btn btn-outline-light grab">Grab</a>
+        <h1 class="nike">nike</h1>
+        <div class="main-img-holder">
+          <img src="./img/red.png" class="d-block w-50 main-img" alt="Nike RED">
+        </div>
+      </div>
+
+      <div class="carousel-item hero-item green">
+        <div class="cap">
+          <h1>50% OFF</h1>
+        </div>
+        <a href="" class="btn btn-outline-light grab">Grab</a>
+        <h1 class="nike">nike</h1>
+        <div class="main-img-holder">
+          <img src="./img/green.png" class="d-block w-50 main-img" alt="Nike GREEN">
+        </div>
+      </div>
+
+      <div class="carousel-item hero-item black">
+        <div class="cap">
+          <h1>70% OFF</h1>
+        </div>
+        <a href="" class="btn btn-outline-light grab">Grab</a>
+        <h1 class="nike">nike</h1>
+        <div class="main-img-holder">
+          <img src="./img/black.png" class="d-block w-50 main-img" alt="Nike BLACK">
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel End -->
+
+  
+
+  <!-- Shoes Section -->
+  <section class="products">
+    <h1 class="main-heading shoes">Shoes</h1>
+    <div class="row rowd pb-5 mb-4">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content green">
+
+              <div class="product-img">
+                <img src="./img/green.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+          
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Boots</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/blue.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+          
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Casual</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">52% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/black.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Basketball</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/red.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+          
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Running</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row rowd pb-5 mb-4">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+          
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Casual</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/white-3.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+          
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Golf Shoe</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">52% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/blue.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+          
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Running</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <!-- Card-->
+        <div class="card shadow-sm border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/green-2.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+              <div class="product-btns">
+                <button class="btn-cart">add to cart
+          
+                </button>
+                <button class="btn-buy">Buy Now
+                  <span><i class="fas fa-cart"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-info-top">
+                <h2 class="sm-title">Casual</h2>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="far fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- Product Showcase -->
+  <!-- <div id="showcase" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#showcase" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active red">
+        <section class="showcase overlay">
+          <div class="container text center">
+            <div class="col-lg-10 offset-1 image-holder">
+              <img src="./img/mac air.png" alt="" class="img-fluid showcase-image">
+            </div>
+            <div class="caption">
+              <h1 class="main-heading apple">APPLE</h1>
+            </div>
+            <div class="offer btn btn-outline-light">Avail Exlusive offers</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="carousel-item green">
+        <section class="showcase overlay">
+          <div class="container text center">
+            <div class="col-lg-10 offset-1 image-holder">
+              <img src="./img/lenovo.png" alt="" class="img-fluid showcase-image">
+            </div>
+            <div class="caption">
+              <h1 class="main-heading apple">LENOVO</h1>
+            </div>
+            <div class="offer btn btn-outline-light">Avail Exlusive offers</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="carousel-item black">
+        <section class="showcase overlay">
+          <div class="container text center">
+            <div class="col-lg-10 offset-1 image-holder">
+              <img src="./img/hp.png" alt="" class="img-fluid showcase-image">
+            </div>
+            <div class="caption">
+              <h1 class="main-heading apple">hp</h1>
+            </div>
+            <div class="offer btn btn-outline-light">Avail Exlusive offers</div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#showcase" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#showcase" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+  <!-- <section class="showcase overlay">
+    <div class="container text center">
+      <div class="col-lg-10 offset-1 image-holder">
+        <img src="./img/mac air.png" alt="" class="img-fluid showcase-image">
+      </div>
+      <div class="caption">
+        <h1 class="main-heading apple">APPLE</h1>
+      </div>
+      <div class="offer btn btn-outline-light">Avail Exlusive offers</div>
+    </div>
+  </section> -->
+
+  <!-- OFFER SLIDER -->
+  <section class="product-slider pb-3 mb-3">
+    <div class="container">
+      <div class="nav navbar-light filter-nav-container">
+      <h1 class="navbar-brand filter-heading">Best Deals</h1>
+    
+      <ul class="navbar-nav filter-nav mb-2">
+        <li class="nav-item">
+          <a class="nav-link active" data-filter="all">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-filter="shoes">Shoes</a>
+        </li>
+    
+        <li class="nav-item">
+          <a class="nav-link" data-filter="mobile">Mobiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-filter="laptop">Laptops</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="offer-slider">
+      
+      <div class="item mobile">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/7.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item shoes">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item laptop">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/mac air.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item shoes">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card shadow border-0">
+          <div class="product">
+
+            <div class="product-content">
+
+              <div class="product-img">
+                <img src="./img/orange.png" alt="" class="img-fluid d-block mx-auto mb-3">
+              </div>
+
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-name">Nike ZOOM</a>
+              <p class="product-price">$ 150</p>
+              <p class="product-price">$ 138.99</p>
+
+            </div>
+            <div class="off-info">
+              <h2 class="sm-title">21% off</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/2dd7b3af28.js"></script>
+  <script src="./assets/slick/slick.min.js"></script>
+  <script src="./assets/main.js"></script>
+
+</body>
+
+</html>
+
+<!-- Product Detail section controls -->
+<!-- <div class="controls">
+                    <div class="color me-5">
+                      <h6>colors :</h6>
+                      <ul>
+                        <li><a href="#!" class="colors color-white active lni lni-checkmark" data-color="white"></a></li>
+                        <li><a href="#!" class="colors color-black" data-color="black"></a></li>
+                        <li><a href="#!" class="colors color-grey" data-color="grey"></a></li>
+                        <li><a href="#!" class="colors color-red" data-color="red"></a></li>
+                        
+                      </ul>
+                    </div>
+
+                    <div class="size">
+                      <h6>Size :</h6>
+                      <ul class="sz">
+                        <li><a href="#!" class="sizes active">9</a></li>
+                        <li><a href="#!" class="sizes">9.5</a></li>
+                        <li><a href="#!" class="sizes">10</a></li>
+                        <li><a href="#!" class="sizes">10.5</a></li>
+                        <li><a href="#!" class="sizes">11</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <div class="pr-price pb-5 bb">
+                    <h3 class="off-price me-1">$2150</h3>
+                    <h5 class="og-price me-3">$2500</h5>
+                    <span class="dark off-badge me-4"> -10% </span>
+                    
+                    <div class="counter mx-3">
+                      <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                      <input type="text" value="1">
+                      <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    
+                    <button class="btn btn-primary rounded-pill px-4">BUY</button>
+
+                  </div> -->
+
+
+
+                  
