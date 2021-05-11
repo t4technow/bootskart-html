@@ -300,233 +300,60 @@
 
 
     <div class="wrapper container shadow-lg">
-        <div class="checkout-nav bb">
-            <li class="checkout-head nav-item br active"><a class="nav-link" href="#cart">Cart</a></li>
-            <li class="checkout-head nav-item br"><a class="nav-link" href="">Shipping Info</a></li>
-            <li class="checkout-head nav-item"><a class="nav-link" href="">Payment</a></li>
-        </div>
-
-        <div class="cart-area" id="cart">
-
-            <div class="bb p-3 cart-list" data-cat="lifestyle" data-price="250">
-
-                <div class="img-holder">
-                    <img src="./img/orange.png" alt="" class="img-fluid mx-auto d-block" />
-                </div>
-
-                <div class="info ps-5">
-                    <div class="prdct">
-                        <a href="#" class="product-name">Nike ZOOM</a>
-                        <span class="cat">Lifestyle</span>
+        
+        <div class="user-form-container">
+        <div class="lr-container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div>
-
-                <span class="product-price ms-5">$ 250</span>
-
-                <div class="add-item px-4 d-flex">
-                    <div class="counter me-3">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input id="quantity" type="number" value="1">
-                        <span class="up" onClick='increaseCount(event, this)'>+</span>
-                    </div>
-                    <span class="product-price ms-3" id="cumiliative-price">$ 250</span>
-                </div>
-                <button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
-                    <i class="lni lni-close"></i>
-                </button>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Password" />
+                    <button class="mt-3">Sign Up</button>
+                </form>
             </div>
-
-            <div class="bb p-3 cart-list" data-cat="lifestyle" data-price="250">
-
-                <div class="img-holder">
-                    <img src="./img/7plus.png" alt="" class="img-fluid mx-auto d-block" />
-                </div>
-
-                <div class="info ps-5">
-                    <div class="prdct">
-                        <a href="#" class="product-name">Nike ZOOM</a>
-                        <span class="cat">Lifestyle</span>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div>
-
-                <span class="product-price ms-5">$ 250</span>
-
-                <div class="add-item px-4 d-flex">
-                    <div class="counter me-3">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input id="quantity" type="number" value="1">
-                        <span class="up" onClick='increaseCount(event, this)'>+</span>
-                    </div>
-                    <span class="product-price ms-3" id="cumiliative-price">$ 250</span>
-                </div>
-                <button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
-                    <i class="lni lni-close"></i>
-                </button>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                </form>
             </div>
-
-            <div class="bb p-3 cart-list" data-cat="lifestyle" data-price="250">
-
-                <div class="img-holder">
-                    <img src="./img/mac pro.png" alt="" class="img-fluid mx-auto d-block" />
-                </div>
-
-                <div class="info ps-5">
-                    <div class="prdct">
-                        <a href="#" class="product-name">Nike ZOOM</a>
-                        <span class="cat">Lifestyle</span>
+            <div class="overlay-container">
+                <div class="overlay blue-bg-op">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
                     </div>
-                </div>
-
-                <span class="product-price ms-5">$ 250</span>
-
-                <div class="add-item px-4 d-flex">
-                    <div class="counter me-3">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input id="quantity" type="number" value="1">
-                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
                     </div>
-                    <span class="product-price ms-3" id="cumiliative-price">$ 250</span>
-                </div>
-                <button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
-                    <i class="lni lni-close"></i>
-                </button>
-            </div>
-
-            <div class="bb p-3 cart-list" data-cat="lifestyle" data-price="250">
-
-                <div class="img-holder">
-                    <img src="./img/watch-11.png" alt="" class="img-fluid mx-auto d-block" />
-                </div>
-
-                <div class="info ps-5">
-                    <div class="prdct">
-                        <a href="#" class="product-name">Nike ZOOM</a>
-                        <span class="cat">Lifestyle</span>
-                    </div>
-                </div>
-
-                <span class="product-price ms-5">$ 250</span>
-
-                <div class="add-item px-4 d-flex">
-                    <div class="counter me-3">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input id="quantity" type="number" value="1">
-                        <span class="up" onClick='increaseCount(event, this)'>+</span>
-                    </div>
-                    <span class="product-price ms-3" id="cumiliative-price">$ 250</span>
-                </div>
-                <button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
-                    <i class="lni lni-close"></i>
-                </button>
-            </div>
-
-            <div class="bb p-3 cart-list" data-cat="lifestyle" data-price="250">
-
-                <div class="img-holder">
-                    <img src="./img/EmondaSLR9DiscEtap_21_33140_B_Primary.png" alt="" class="img-fluid mx-auto d-block" />
-                </div>
-
-                <div class="info ps-5">
-                    <div class="prdct">
-                        <a href="#" class="product-name">Nike ZOOM</a>
-                        <span class="cat">Lifestyle</span>
-                    </div>
-                </div>
-
-                <span class="product-price ms-5">$ 250</span>
-
-                <div class="add-item px-4 d-flex">
-                    <div class="counter me-3">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input id="quantity" type="number" value="1">
-                        <span class="up" onClick='increaseCount(event, this)'>+</span>
-                    </div>
-                    <span class="product-price ms-3" id="cumiliative-price">$ 250</span>
-                </div>
-                <button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
-                    <i class="lni lni-close"></i>
-                </button>
-            </div>
-
-            <div class="tot">
-                <div class="total bb">
-                    <p class="hint">Please click next to add your billing info</p>
-
-                    <div class="amount me-5 ms-5 px-3">
-                        Total Price :
-                    </div>
-                    <span class="product-price" id="cumiliative-price">$ 4250</span>
-
-                    <button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
-                        <i class="lni lni-reload"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="row white popular rowd bb py-3 text-center load">
-				<a href="" class="product-name">
-					<h3 class="light-head">
-                        Next Step
-						<span><i class="lni lni-chevron-right"></i></span>
-					</h3>
-				</a>
-			</div>
-
-        </div>
-
-        <div class="shipping-info">
-            <div class="row rowd">
-                <div class="col-md-6">
-                    
-                </div>
-                <div class="col-md-6">
-                    <form action="" class="row p-5">
-                        <div class="col-md-6 g-0">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName">
-                          </div>
-                          <div class="col-md-6 g-0">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName">
-                          </div>
-
-                          <div class="col-md-6 g-0">
-                            <label for="eMail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="eMail">
-                          </div>
-                          <div class="col-md-6 g-0">
-                            <label for="mobileNumber" class="form-label">Phone</label>
-                            <input type="tel" class="form-control" id="mobileNumber">
-                          </div>
-
-                          <div class="col-md-6 g-0">
-                            <label for="inputState" class="form-label">State</label>
-                            <select id="inputState" class="form-select">
-                              <option selected>Choose...</option>
-                              <option>...</option>
-                            </select>
-                          </div>
-
-                          <div class="col-md-6 g-0">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                          </div>
-                          
-                          <div class="col-md-4 g-0">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                          </div>
-
-                          
-
-                          <div class="col-8 g-0">
-                            <label for="userAddress" class="form-label">Address 2</label>
-                            <input type="text" class="form-control" id="userAddress" placeholder="Apartment, studio, or floor">
-                          </div>
-                    </form>
                 </div>
             </div>
         </div>
+        </div>
+        
+        
+    </div>
+
 
     </div>
 

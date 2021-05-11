@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+	<title>Product - BootsKart</title>
+
 	<!-- Required meta tags -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,18 +23,18 @@
 
 	<link rel="stylesheet" href="./assets/style.css" />
 
-	<title>Product - BootsKart</title>
 </head>
 
 <body>
 	<!-- Navbar Start -->
-	<nav class="navbar navbar-expand-md navbar-brand-center justify-content-between vlt fixed-top">
+	<div class="navbar-holder w-100  fixed-top">
+	<nav class="navbar navbar-expand-md navbar-brand-center justify-content-between vlt">
 		<ul class="navbar-nav left-nav">
-			<li class="nav-item main-nav-item" id="search">
+			<li class="nav-item main-nav-item h-nav-item" id="search">
 				<i class="sc lni lni-search-alt"></i>
 			</li>
 
-			<li class="nav-item mega dropdown has-megamenu">
+			<li class="nav-item h-nav-item mega dropdown has-megamenu">
 				<div class="ico px-2" data-bs-toggle="dropdown">
 					<i class="lni lni-menu"></i>
 				</div>
@@ -125,41 +128,161 @@
 			</li>
 		</ul>
 
-		<a class="navbar-brand main-nav-item nav-item" href="#"> BootsKart </a>
+		<a class="navbar-brand main-nav-item h-nav-item nav-item" href="#"> BootsKart </a>
 
 		<ul class="navbar-nav right-nav">
-			<!-- If logged in 
-					<li class="nav-item main-nav-item">
-					<a class="nav-link user-link" href="#">
-						<img src="./img/john-doe.jpg" alt="" class="img-thumbnail rounded-circle">
-					</a>
-				</li> -->
-			<li class="nav-item main-nav-item">
+			<!-- If logged in  -->
+			<li class="nav-item main-nav-item h-nav-item">
+				<a class="nav-link user-link" href="#">
+					<img src="./img/john-doe.jpg" alt="" class="img-thumbnail rounded-circle">
+				</a>
+			</li>
+			<!-- <li class="nav-item main-nav-item h-nav-item">
 				<a class="nav-link" href="#">
 					<i class="lni lni-user"></i>
 				</a>
-			</li>
-			<li class="nav-item main-nav-item">
-				<a class="nav-link" href="#">
+			</li> -->
+			<li class="nav-item main-nav-item h-nav-item wish-link dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="wishDropdown" data-bs-toggle="dropdown"
+				aria-expanded="false">
 					<i class="lni lni-heart"></i>
 				</a>
+				<span class="wish-count">6</span>
+
+				<ul class="dropdown-menu cart-open dropdown-menu-end" id="wishList" aria-labelledby="wishDropdown">
+					<h5 class="cart-head py-1">
+						Wish List <span class="txt-vlt">6</span>
+					</h5>
+
+					<div class="wish-list-container">
+						<li class="bt py-2">
+							<a class="dropdown-item dd-cart-item d-flex" href="#">
+								<div class="img-holder">
+									<img src="./img/EmondaSLR9DiscEtap_21_33140_B_Primary.png" alt="" class="img-thumbnail d-block mx-auto"></img>
+								</div>
+								<div class="product-details w-100">
+									<h6 class="product-name">Emonda SLR</h6>
+									<span class="product-price txt-vlt mx-auto">$12250</span>
+								</div>
+								<button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
+									<i class="lni lni-close"></i>
+								</button>
+							</a>
+						</li>
+						
+						<li class="bt py-2">
+							<a class="dropdown-item dd-cart-item d-flex" href="#">
+								<div class="img-holder">
+									<img src="./img/watch-11.png" alt="" class="img-thumbnail d-block mx-auto"></img>
+								</div>
+								<div class="product-details w-100">
+									<h6 class="product-name">iWatch</h6>
+									<span class="product-price txt-vlt mx-auto">$450</span>
+								</div>
+								<button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
+									<i class="lni lni-close"></i>
+								</button>
+							</a>
+						</li>
+						
+						<li class="bt py-2">
+							<a class="dropdown-item dd-cart-item d-flex" href="#">
+								<div class="img-holder">
+									<img src="./img/black.png" alt="" class="img-thumbnail d-block mx-auto"></img>
+								</div>
+								<div class="product-details w-100">
+									<h6 class="product-name">Nike zoom</h6>
+									<span class="product-price txt-vlt mx-auto">$250</span>
+								</div>
+								<button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
+									<i class="lni lni-close"></i>
+								</button>
+							</a>
+						</li>
+						
+						<li class="bt py-2">
+							<a class="dropdown-item dd-cart-item d-flex" href="#">
+								<div class="img-holder">
+									<img src="./img/7.png" alt="" class="img-thumbnail d-block mx-auto"></img>
+								</div>
+								<div class="product-details w-100">
+									<h6 class="product-name">iPhone 7</h6>
+									<span class="product-price txt-vlt mx-auto">$950</span>
+								</div>
+								<button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
+									<i class="lni lni-close"></i>
+								</button>
+							</a>
+						</li>
+						
+					</div>
+
+					<div class="d-grid">
+						<button class="btn btn-primary py-2 checkout" type="button">see all</button>
+					</div>
+				</ul>
 			</li>
-			<li class="nav-item main-nav-item">
-				<a class="nav-link" href="#">
+
+			<li class="nav-item main-nav-item h-nav-item cart-link dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="cartDropdown" data-bs-toggle="dropdown"
+					aria-expanded="false">
 					<i class="lni lni-cart"></i>
 				</a>
+				<span class="item-count rounded-circle">2</span>
+				<ul class="dropdown-menu cart-open dropdown-menu-end" aria-labelledby="cartDropdown">
+					<h5 class="cart-head py-1">
+						Your Cart <span class="txt-vlt">2</span>
+					</h5>
+					<div class="cart-list-container">
+					
+						<li class="bt py-2">
+							<a class="dropdown-item dd-cart-item d-flex" href="#">
+								<div class="img-holder">
+									<img src="./img/mac air.png" alt="" class="img-thumbnail d-block mx-auto"></img>
+								</div>
+								<div class="product-details w-100">
+									<h6 class="product-name">Mac Air</h6>
+									<span class="product-price txt-vlt mx-auto">$1250</span>
+								</div>
+								<button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
+									<i class="lni lni-close"></i>
+								</button>
+							</a>
+						</li>
+						
+						<li class="bt py-2">
+							<a class="dropdown-item dd-cart-item d-flex" href="#">
+								<div class="img-holder">
+									<img src="./img/7plus.png" alt="" class="img-thumbnail d-block mx-auto"></img>
+								</div>
+								<div class="product-details w-100">
+									<h6 class="product-name">Nike zoom</h6>
+									<span class="product-price txt-vlt mx-auto">$250</span>
+								</div>
+								<button class="btn close-btn" data-bs-toggle="tooltip" data-bs-placement="top" title="clear">
+									<i class="lni lni-close"></i>
+								</button>
+							</a>
+						</li>
+
+					<div class="d-grid">
+						<button class="btn btn-primary py-2 checkout" type="button">Check out</button>
+					</div>
+				</div>
+				</ul>
 			</li>
 		</ul>
 	</nav>
 
-	<form action="" class="search-form hide-item">
+	<form action="" class="search-form nav-search hide-item">
 		<input class="search-input" type="search" placeholder="Search" aria-label="Search" />
 		<button class="btn search-btn" type="submit">
 			<i class="lni lni-search-alt"></i>
 		</button>
 	</form>
+	</div>
 	<!-- Navbar Ends -->
-<div class="offset"></div>
+	<div class="offset"></div>
 	<div class="breadcrumb-area pt-4 vlt">
 		<h2 class="cat-head">MEN'S LIFESTYLE SHOES</h2>
 		<ul class="breadcrumb">
@@ -216,12 +339,12 @@
 				<div class="col-md-3 filter-controls br">
 					<div class="filter-cap bb">
 						<h5 class="ps-5 nav-item sub-nav-item">Filter</h5>
-						<span class="nav-item sub-nav-item">
+						<button class="btn nav-item sub-nav-item" id="clearAllFilters">
 							<i class="lni lni-reload"></i>
-						</span>
+						</button>
 					</div>
 					<ul class="nav flex-column">
-						<li class="px-4 nav-item dd pb-3">
+						<li class="px-4 nav-item dd cat-filter pb-3">
 							<a class="nav-link dd-toggle filter-dropper" href="#" role="button"
 								data-bs-toggle="dropdown" aria-expanded="true">
 								categories
@@ -424,10 +547,10 @@
 
 						<ul class="navbar-nav bl right-nav" id="viewController">
 							<li class="nav-item sub-nav-item active" id="gridV" data-toggle="gridShowcase">
-								<i class="lni lni-grid-alt"></i>
+								<a href="javascript:void(0);"><i class="lni lni-grid-alt"></i> </a>
 							</li>
 							<li class="nav-item sub-nav-item" id="listV" data-toggle="listShowcase">
-								<i class="lni lni-list"></i>
+								<a href="javascript:void(0);"><i class="lni lni-list"></i></a>
 							</li>
 						</ul>
 					</div>
